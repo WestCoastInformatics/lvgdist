@@ -10,7 +10,7 @@
 
   <groupId>gov.nih.nlm.nls.lvg</groupId>
   <artifactId>lvgdist</artifactId>
-  <version>2015</version>
+  <version>2015-SNAPSHOT</version>
   <name>NLM LVG Distribution</name>
   <description>NLM LVG Distribution</description>
   <url>http://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/current/web/download.html</url>
