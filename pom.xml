@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -10,7 +9,7 @@
 
   <groupId>gov.nih.nlm.nls.lvg</groupId>
   <artifactId>lvgdist</artifactId>
-  <version>2015-SNAPSHOT</version>
+  <version>2015</version>
   <name>NLM LVG Distribution</name>
   <description>NLM LVG Distribution</description>
   <url>http://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/current/web/download.html</url>
