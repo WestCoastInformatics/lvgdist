@@ -4,7 +4,7 @@
 
   <groupId>gov.nih.nlm.nls.lvg</groupId>
   <artifactId>lvgdist</artifactId>
-  <version>2016.1-SNAPSHOT</version>
+  <version>2017.0-SNAPSHOT</version>
   <name>NLM LVG Distribution</name>
   <description>NLM LVG Distribution</description>
   <url>http://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/current/web/download.html</url>
@@ -45,7 +45,7 @@
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.6</version>
+        <version>1.6.7</version>
         <extensions>true</extensions>
         <configuration>
           <serverId>ossrh</serverId>
@@ -85,7 +85,7 @@
             <configuration>
               <artifacts>
                 <artifact>
-                  <file>${basedir}/src/main/resources/lvg2016dist.jar</file>
+                  <file>${basedir}/src/main/resources/lvg2017dist.jar</file>
                   <type>jar</type>
                 </artifact>
               </artifacts>

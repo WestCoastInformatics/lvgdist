@@ -1,6 +1,7 @@
 When ready to push a next version
 
 * First check for the latest version of the staging plugin
+  * https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin
 * Ensure the private key is properly configured
 
 
