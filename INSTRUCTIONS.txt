@@ -4,30 +4,35 @@ When ready to push a next version
   * https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin
 * Ensure the private key is properly configured
 
+DO AS ONE OPERATION (if you're sure):
+
+* To deploy a release, remove -SNAPSHOT. Once you have updated all the 
+  versions and ensured that your build passes without deployment you can
+  perform the deployment with the usage of the release profile with:
+
+mvn clean deploy -P release
+
+DO ONE STEP AT A TIME (if you're not sure):
 
 * If your version is a release version (does not end in -SNAPSHOT) 
   and with this setup in place, you can run a deployment to OSSRH 
   and an automated release to the Central Repository with the usual:
 
-mvn clean deploy
+mvn clean deploy -DautoReleaseAfterClose=false
 
 * With the property autoReleaseAfterClose set to false you can manually
-  inspect the staging repository in Nexus and trigger a release of the 
-  staging repository later with
+  inspect the staging repository in Nexus ( https://oss.sonatype.org,
+  see http://central.sonatype.org/pages/releasing-the-deployment.html)
+  and trigger a release of the staging repository later with:
 
 mvn nexus-staging:release
 
-* If you find something went wrong you can drop the staging repository with
+* If you find something went wrong you can drop the staging repository with:
 
 mvn nexus-staging:drop
 
-* To deploy a SNAPSHOT, simply run "clean deploy" with a -SNAPSHOT version
-
-* To deploy a release, remove -SNAPSHOT. Once you have updated all the 
-  versions and ensured that your build passes without deployment you can
-  perform the deployment with the usage of the release profile with
-
-mvn clean deploy -P release
+* To deploy a SNAPSHOT, simply run "mvn clean deploy" with a -SNAPSHOT version
+  (not sure this is ever a good idea).
 
 
 Updating to new version, use this process:
