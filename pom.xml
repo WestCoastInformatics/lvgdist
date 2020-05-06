@@ -11,7 +11,7 @@
 
   <groupId>gov.nih.nlm.nls.lvg</groupId>
   <artifactId>lvgdist</artifactId>
-  <version>2019.0</version>
+  <version>2020.0</version>
   <name>NLM LVG Distribution</name>
   <description>NLM LVG Distribution</description>
   <url>http://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/current/web/download.html</url>
@@ -67,7 +67,7 @@
         </configuration>
       </plugin>
 
-      <!-- Attach lvg2019dist.jar -->
+      <!-- Attach lvg2020dist.jar -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
@@ -82,7 +82,7 @@
             <configuration>
               <artifacts>
                 <artifact>
-                  <file>${basedir}/src/main/resources/lvg2019dist.jar</file>
+                  <file>${basedir}/src/main/resources/lvg2020dist.jar</file>
                   <type>jar</type>
                 </artifact>
               </artifacts>
